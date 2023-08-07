@@ -1,3 +1,5 @@
+package calculator;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -9,7 +11,7 @@ private JTextField textfield;
 private boolean number = true;
 private String equalOp = "=";
 private CalculatorOp op = new CalculatorOp();
-
+ 
 public Calculator() {
     textfield = new JTextField("", 12);
     textfield.setHorizontalAlignment(JTextField.RIGHT);
@@ -67,7 +69,7 @@ class OperatorListener implements ActionListener {
         {
             textfield.setText("" + Math.cos(Double.valueOf(displayText).doubleValue()));
             
-        }
+        } 
         else
         if (e.getActionCommand().equals("log"))
         {
